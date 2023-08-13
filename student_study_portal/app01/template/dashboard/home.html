@@ -1,0 +1,129 @@
+{% extends 'dashboard/base.html' %} 
+{% load static %} 
+{% block content %}
+
+<section class="container text-center">
+  <h3>Welcome</h3>
+<!-- "{% static 'images/youtube.jpg' %}" it is used to add photo to the console -->
+  <hr> <br>
+  <div class="row">
+    <div class="col-md-3">
+      <a href="{% url 'notes' %}">
+        <div class="card">
+          <img class="card-img-top" src="https://imgs.search.brave.com/bbCO8W8KccobPLLbxa0m7QzApybIRwUUBlpsGHhNkvc/rs:fit:512:341:1/g:ce/aHR0cHM6Ly9kMTEz/d2s0Z2EzZjBsMC5j/bG91ZGZyb250Lm5l/dC9jP289ZUp3MWpk/ME93aUFVZzktRjY4/bUF5WXkteklKd3Rp/RXdDQnl5R09PN2kz/LTlhWnIwYXgta3hK/bzFUQTd1NUVKNEw4/YlQwQXZHajJ3Y0dC/c0ZsN0puSDAxMVE0/c2V6SUhUVzFwSTkw/ZXZWVHZBUnVzWXFM/ZkxpZ1dqZHRRR3RV/Q2hOZm1vVEtFcFIx/TTEycmcxOUhzM3kz/a2V6aTN1MXVCS0xw/S0xqcXp3bnZnRmhK/QzhRbWpsdlZrT0tq/c3dqSlBuQzBjS082/az0mcz0zNzg1M2U2/ODNhNDM4YmZlNTgy/NTcxODI5N2U5NTFi/YzI3YzNkZTNh" alt="Notes image">
+          <div class="card-body">
+            <h5 class="card-title ">
+              Notes
+            </h5>
+            Create Notes to refer them later. They are stored permanently until deleted
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-md-3">
+      <a href="{% url 'homework' %}">
+        <div class="card">
+          <img class="card-img-top" src="https://imgs.search.brave.com/Yhfjpgx5ZA4fL2EdlClY8ZqGip3AdYJFzstyleUWweE/rs:fit:1200:853:1/g:ce/aHR0cHM6Ly9zdG9y/YWdlLm5lZWRwaXgu/Y29tL3JzeW5jZWRf/aW1hZ2VzL3NjaG9v/bC0zOTk0MjExXzEy/ODAuanBn" alt="Notes image">
+          <div class="card-body">
+            <h5 class="card-title ">
+              Homework
+            </h5>
+            Add homeworks and assign them deadlines. They will be displayed prioritised by deadlines
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-3">
+      <a href="{% url 'youtube' %}">
+        <div class="card">
+          <img class="card-img-top" src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2015/11/13/12/youtubemusic.jpg" alt="Notes image">
+          <div class="card-body">
+            <h5 class="card-title ">
+              Youtube
+            </h5>
+            Search Youtube and select your desired video to play it on youtube
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-3">
+      <a href="{% url 'todo' %}">
+        <div class="card">
+          <img class="card-img-top" src="https://imgs.search.brave.com/6CKA_aEHyUz9ZdcQkxw8ksPBs1dmc5Tm3s1NnGgMEBg/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly93d3cu/bWF0dG5vcm1hbi5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MTUvMDkvdG9kby1s/aXN0LmpwZw" alt="Notes image">
+          <div class="card-body">
+            <h5 class="card-title ">
+              To Do
+            </h5>
+            Add your to-do lists for your day and remove them as you finish
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+  <br><br><br>
+  <div class="row">
+    <div class="col-md-3 ">
+      <a href="{% url 'book' %}">
+        <div class="card mt-20">
+          <img class="card-img-top" src="https://imgs.search.brave.com/0-_X-rW0YVZQ1YGmYpXPSrVdDIcCIFkm06YN3BVSfDU/rs:fit:1200:1200:1/g:ce/aHR0cDovL25vcnRo/c3Rhcm1vdmluZy5j/b20vYmxvZy93cC1j/b250ZW50L3VwbG9h/ZHMvMjAxNi8wOC9Q/YWNrZWQtQm9va3Mu/anBn" alt="Notes image">
+          <div class="card-body">
+            <h5 class="card-title ">
+              Books
+            </h5>
+            Browse books from a list of neatly organised book menu
+          </div>
+        </div>
+      </a>
+    </div>
+
+
+
+    <div class="col-md-3">
+      <a href="{%url 'dict' %}">
+        <div class="card">
+          <img class="card-img-top" src="https://imgs.search.brave.com/ZZotcHbpccQGpgW-bvORRh0gsdlxww6oqzc8GMYoXus/rs:fit:1200:1000:1/g:ce/aHR0cDovL2kuaHVm/ZnBvc3QuY29tL2dl/bi8yNTA3ODgwL2lt/YWdlcy9vLURJQ1RJ/T05BUlktZmFjZWJv/b2suanBn" alt="Notes image">
+          <div class="card-body">
+            <h5 class="card-title ">
+              Dictionary
+            </h5>
+            A vocabulary from a book is troubling you? No problem, enter the word, and the meaning will be displayed
+            almost instantaneously.
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-3">
+      <a href="#">
+        <div class="card">
+          <img class="card-img-top" src="https://imgs.search.brave.com/ybSo7mXrGqHIwr941kl57zMfI2ZWv_PQ_YUHJjLhX_Y/rs:fit:1058:1058:1/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy8x/LzE5L1dpa2lwZWRp/YV9sb2dvX3JlZC5w/bmc" alt="Notes image">
+          <!-- <img class="card-img-top" src="{% static 'images/wiki.jpg' %}" alt="Notes image"> -->
+          <div class="card-body">
+            <h5 class="card-title ">
+              WikiPedia
+            </h5>
+            Homework and Assignments? Search wikipedia to get fast results
+          </div>
+        </div>
+      </a>
+    </div>
+
+
+    <div class="col-md-3">
+      <a href="#">
+        <div class="card">
+          <img class="card-img-top" src="https://imgs.search.brave.com/tbspc8GsLrzn__8FgDUHvk9MPRI88JwwmOCusB8GOfI/rs:fit:713:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5X/cjdpOVN3TThYZmZ5/dzJhQnA1UEl3SGFF/NyZwaWQ9QXBp" alt="Notes image">
+          <div class="card-body">
+            <h5 class="card-title ">
+              Conversion
+            </h5>
+            Check out the conversion table, that helps you to convert measurements to more familiar ones of your choice.
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+
+</section>
+{% endblock content %}
